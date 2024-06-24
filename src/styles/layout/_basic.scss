@@ -1,0 +1,14 @@
+@use './../abstract/mixins' as *;
+
+.wrapper {
+  margin: 0 auto;
+  padding: 36px 40px;
+
+  @include max-768 {
+    padding: 24px;
+  }
+
+  @include max-380 {
+    padding: 14px 24px;
+  }
+}

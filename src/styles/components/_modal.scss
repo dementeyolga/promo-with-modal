@@ -1,0 +1,25 @@
+@use './../abstract/variables' as *;
+
+.modal {
+  &__wrapper {
+    // display: none;
+    position: relative;
+    background-color: $color-background-lighter;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color-background-general;
+    border-radius: $border-radius-medium;
+  }
+}

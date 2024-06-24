@@ -1,25 +1,49 @@
 @use './../abstract/variables' as *;
+@use './../abstract/mixins' as *;
 
 .h3 {
+  font-family: $font-main;
   font-size: 1.875rem;
   font-weight: 500;
-  line-height: 48px;
+  line-height: 160%;
   text-align: left;
   color: $color-text-accent;
+
+  @include max-1440 {
+    font-size: 1.625rem;
+  }
+
+  @include max-768 {
+    font-size: 1.25rem;
+  }
+
+  @include max-380 {
+    font-size: 1.0625rem;
+  }
 }
 
 .h4 {
-  font-size: 2.625rem;
+  font-family: $font-main;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 32.78px;
+  line-height: 160%;
   text-align: left;
   color: $color-text;
 }
 
 .caption {
+  font-family: $font-main;
   font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 27.2px;
+  line-height: 160%;
   text-align: left;
   color: $color-text-light;
+
+  @include max-768 {
+    font-size: 0.9375rem;
+  }
+
+  @include max-380 {
+    font-size: 0.8125rem;
+  }
 }

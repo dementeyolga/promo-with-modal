@@ -1,0 +1,63 @@
+@use './../abstract/variables' as *;
+
+.form {
+  padding: 80px 24px 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: $font-main;
+
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__input {
+    padding: 24px;
+    margin-bottom: 4px;
+
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24.59px;
+    color: $color-text;
+
+    border: none;
+    border-radius: $border-radius-medium;
+    background-color: $color-background-lightish;
+    outline: none;
+
+    &::placeholder {
+      color: $color-text-accent;
+    }
+
+    &:last-of-type {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 24px;
+
+    display: flex;
+    gap: 14px;
+
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 24.59px;
+  }
+
+  &__link {
+    margin-bottom: 36px;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 27.32px;
+    color: $color-background-accent;
+  }
+
+  &__button {
+    &:not(:last-of-type) {
+      margin-bottom: 4px;
+    }
+  }
+}
