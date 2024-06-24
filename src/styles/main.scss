@@ -1,0 +1,11 @@
+@use './base/fonts' as *;
+@use './components/button' as *;
+@use './abstract/variables' as *;
+@use './layout/basic' as *;
+@use './base/text' as *;
+
+body {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
