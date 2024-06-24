@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promo with Modal</title>
   </head>
@@ -24,6 +24,25 @@
       </div>
       <div class="promo__image">
         <img src="./src/assets/promo.png" alt="Иллюстрация с компьютером" />
+      </div>
+    </div>
+    <div class="modal__wrapper">
+      <div class="modal__content">
+        <div class="modal__close-btn">
+          <img src="./src/assets/cross.png" alt="" />
+        </div>
+        <form action="" class="modal__form form">
+          <h4 class="form__title">Войти в систему</h4>
+          <input type="text" class="form__input" placeholder="Email/Телефон" />
+          <input type="password" class="form__input" placeholder="Пароль" />
+          <label class="form__label">
+            <input type="checkbox" class="form__checkbox" />
+            Запомнить пароль
+          </label>
+          <a href="/" class="form__link">Восстановить</a>
+          <button type="submit" class="form__button">Войти</button>
+          <button type="submit" class="form__button">Зарегестрироваться</button>
+        </form>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
