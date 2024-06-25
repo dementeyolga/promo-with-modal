@@ -43,6 +43,7 @@
     padding: 12px 12px 12px 24px;
 
     justify-content: space-between;
+    gap: 3px;
     border-radius: $border-radius-large;
 
     @include max-768 {

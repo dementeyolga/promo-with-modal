@@ -57,6 +57,33 @@
     }
   }
 
+  &__checkbox {
+    position: relative;
+
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 2px solid $color-border-dark;
+    border-radius: 2px;
+
+    &:checked {
+      &::after {
+        content: '✔';
+        font-size: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -53%);
+        color: $color-background-accent;
+      }
+    }
+  }
+
   &__link {
     margin-bottom: 36px;
 
