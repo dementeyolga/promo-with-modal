@@ -33,27 +33,34 @@
       </div>
     </div>
 
-    <div class="modal__wrapper">
-      <div class="modal__content">
-        <div class="modal__close-btn">
-          <img src="./src/assets/images/cross.png" alt="" />
+    <div class="wrapper">
+      <div class="modal__wrapper">
+        <div class="modal__content">
+          <div class="modal__close-btn">
+            <img src="./src/assets/images/cross.png" alt="" />
+          </div>
+          <form action="" class="modal__form form">
+            <h4 class="form__title h4">Войти в систему</h4>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Email/Телефон"
+            />
+            <input type="password" class="form__input" placeholder="Пароль" />
+            <label class="form__label">
+              <input type="checkbox" class="form__checkbox" />
+              Запомнить пароль
+            </label>
+            <a href="/" class="form__link">Восстановить</a>
+            <button type="submit" class="form__button button">Войти</button>
+            <button type="submit" class="form__button button button--secondary">
+              Зарегистрироваться
+            </button>
+          </form>
         </div>
-        <form action="" class="modal__form form">
-          <h4 class="form__title h4">Войти в систему</h4>
-          <input type="text" class="form__input" placeholder="Email/Телефон" />
-          <input type="password" class="form__input" placeholder="Пароль" />
-          <label class="form__label">
-            <input type="checkbox" class="form__checkbox" />
-            Запомнить пароль
-          </label>
-          <a href="/" class="form__link">Восстановить</a>
-          <button type="submit" class="form__button button">Войти</button>
-          <button type="submit" class="form__button button button--secondary">
-            Зарегистрироваться
-          </button>
-        </form>
       </div>
     </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

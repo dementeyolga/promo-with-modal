@@ -29,6 +29,18 @@
   line-height: 160%;
   text-align: left;
   color: $color-text;
+
+  @include max-1440 {
+    font-size: 1.375rem;
+  }
+
+  @include max-768 {
+    font-size: 1.25rem;
+  }
+
+  @include max-380 {
+    font-size: 1.0625rem;
+  }
 }
 
 .caption {
